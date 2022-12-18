@@ -126,7 +126,7 @@ function TableData({tableInfo ,ChoosedFilters, ChoosedFilterswithOrder, selected
     const selectedRangeFilter = useSelector(state => state.filter.openFilter )
    
     useEffect(() => {
-        let url = `http://go-dev.greedygame.com/v3/dummy/report?startDate=${startDate}&endDate=${endDate}`
+        let url = `https://go-dev.greedygame.com/v3/dummy/report?startDate=${startDate}&endDate=${endDate}`
         dispatch(fetchData(url))
 
     }, [startDate])
